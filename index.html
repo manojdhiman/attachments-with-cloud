@@ -1,0 +1,17 @@
+
+<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="mm0ti477g109m5p"></script>
+<script src="https://www.google.com/jsapi?key=AIzaSyD-vR3KTfGdzHlpTJU-QfQJHNdACDWfs-0"></script>
+<script src="https://apis.google.com/js/client.js?onload=initPicker"></script>
+
+<div id="attachments-wrapper" class="text-placeholder border-none" data-text="attach files to notes">
+   <div class="attach-file dropdown" style="display: block;">
+      <a aria-expanded="true" data-toggle="dropdown" href="javascript:;">
+      <span class="icon-ts-files"></span><span class="ts-files link">Select files</span></a>
+      <ul class="subattachFile popup dropdown-menu dm-icon pull-left">
+         <li><a data-id="1" class="link" onclick="noteAttachlocal()" id="pick">From Local Computer</a></li>
+         <li><a data-id="2" class="link" id="googlepicker">From google drive</a></li>
+         <li><a id="uDropBoxLink" class="link" onclick="noteAttachdb()">From dropbox</a></li>
+      </ul>
+   </div>
+   <div id="attachments"></div>
+</div>
